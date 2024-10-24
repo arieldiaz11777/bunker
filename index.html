@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <button onclick="loadPage('/templates/inicio.html')">Inicio</button>
+        <button onclick="loadPage('/templates/registro_cliente.html')">Registro de Clientes</button>
+        <button onclick="loadPage('/templates/ver_clientes.html')">Clientes</button>
+    </div>
+
+    <!-- Contenedor central -->
+    <div class="content">
+        <iframe id="content-frame" src=""></iframe>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>

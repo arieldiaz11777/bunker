@@ -1,0 +1,83 @@
+/* Estilo general del cuerpo con imagen de fondo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    background-image: url('/static/Bunker.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #f2f2f2;
+    overflow: hidden;
+}
+
+/* Fondo oscuro transparente para la barra lateral */
+.sidebar {
+    width: 220px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo de los botones de la barra lateral */
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f2f2f2;
+    border: 2px solid #666;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover y clic para los botones */
+.sidebar button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #999;
+    color: #ffffff;
+}
+
+.sidebar button:active {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #ffffff;
+    transform: scale(0.97);
+}
+
+/* Contenedor central con efecto industrial */
+.content {
+    flex: 1;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+}
+
+/* Iframe para contenido dinámico */
+iframe {
+    width: 100%;
+    height: calc(100vh - 60px);
+    border: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Scroll personalizado */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}

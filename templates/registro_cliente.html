@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar cliente nuevo</title>
+    <link rel="stylesheet" href="/static/css/registro_cliente.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="text-shadow: 2px 2px 4px #d19740;">Registrar cliente nuevo</h2>
+        <form id="uploadForm">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            <input type="tel" id="telefono" placeholder="Teléfono" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="date" id="fechaInscripcion" required>
+            <button type="submit">Enviar</button>
+            <div id="spinner" style="display:none;">Cargando...</div>
+        </form>
+
+        <p id="response"></p>
+    </div>
+    <script src="/static/js/registro_cliente.js"></script>
+</body>
+
+</html>
